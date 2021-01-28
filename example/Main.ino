@@ -13,6 +13,11 @@ void setup(){
     
     //Print a string to the display
     lcd.printString("Hello World!");
+    
+    //Other commands are available such as 
+    //LCD::clear() - to clear the display
+    //LCD::displayOn() - to turn the display on
+    //LCD::displayOff() - to turn the display off
 }
 
 void loop(){
