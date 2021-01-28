@@ -1,3 +1,4 @@
+//Include driver code
 #include "./LCD.h"
 
 //Define pins
@@ -6,12 +7,13 @@ const int rs = 12, enable = 11;
 
 void setup(){
     LCD lcd = LCD(rs, enable, d4, d5, d6, d7);
-
+    
+    //Print a single character to the display
     lcd.printChar('a');
-    lcd.printString("This is cool!!!");
+    
+    //Print a string to the display
+    lcd.printString("Hello World!");
 }
 
 void loop(){
-
-
 }
